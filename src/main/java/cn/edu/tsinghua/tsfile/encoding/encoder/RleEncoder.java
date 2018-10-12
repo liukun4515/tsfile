@@ -228,7 +228,7 @@ public abstract class RleEncoder<T extends Comparable<T>> extends Encoder {
                 repeatCount = config.RLE_MAX_REPEATED_NUM;
                 try {
                     writeRleRun();
-                    LOGGER.debug("tsfile-encoding RleEncoder : write full rle run to stream");
+//                    LOGGER.debug("tsfile-encoding RleEncoder : write full rle run to stream");
                 } catch (IOException e) {
                     LOGGER.error(
                             " error occurs when writing full rle run to OutputStram when repeatCount = {}."
